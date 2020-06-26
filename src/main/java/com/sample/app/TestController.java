@@ -21,7 +21,7 @@ public class TestController {
     public String getPage01(Model model) {
         
         String returnValue = sqlSession.selectOne("com.sample.dao.BaseMapper.selectSample", "TEST");
-        model.addAttribute("frm", "page01");
+        model.addAttribute("frm", "page01"   );
         model.addAttribute("msg", returnValue);
         
         return "sample";
